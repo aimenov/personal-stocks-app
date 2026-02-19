@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-200;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+/* Card styling */
+.card {
+  @apply rounded-lg bg-slate-900 border border-slate-800 shadow-lg hover:shadow-xl transition-shadow;
+}
+
+/* Button base styles */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 ease-out;
+}
+
+.btn-primary {
+  @apply bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2;
+}
+
+.btn-secondary {
+  @apply bg-slate-800 hover:bg-slate-700 text-white px-4 py-2;
+}
+
+.btn-ghost {
+  @apply bg-transparent hover:bg-slate-800 text-slate-300 hover:text-white px-4 py-2;
+}
+
+/* Hover effects */
+.hover-lift:hover {
+  @apply -translate-y-1 shadow-xl;
+}
+
+.hover-glow:hover {
+  @apply shadow-lg shadow-emerald-500/20;
+}
+
+/* Text styles */
+.text-ticker {
+  @apply font-mono font-bold text-lg;
+}
+
+.text-muted {
+  @apply text-slate-400;
+}
+
+/* Loading skeleton */
+.skeleton {
+  @apply animate-pulse bg-slate-800 rounded-lg;
+}
