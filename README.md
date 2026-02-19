@@ -1,4 +1,4 @@
-# 🚀 Stock Screener - Complete Full-Stack MVP
+# 🚀 Stock Screener
 
 A high-performance stock screening application built with **.NET 10 + Next.js 14**.
 
